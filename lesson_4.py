@@ -212,8 +212,7 @@ def ConquestCampaign(N, M, L, battalion):
             for i in range(len(n)):
                 battalion.append(n[i])
                 battalion.append(m[i])
-
+    d -= 1
+    return d
   else:
     print('неверно введены данные!')
-  d -= 1
-  return d
