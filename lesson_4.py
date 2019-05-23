@@ -1,7 +1,6 @@
 def ConquestCampaign(N, M, L, battalion):
   n = []
   m = []
-  t = []
   p = []
   newn = []
   newm = []
@@ -20,6 +19,9 @@ def ConquestCampaign(N, M, L, battalion):
           n.append(battalion[i]) 
         else:
           m.append(battalion[i])
+    for i in range(len(n)):
+      if n[i] > N or m[i] > M :
+        return print('Введенные значения выходят за рамки матрицы')
     for i in range(L): #проверка на повторы
       p.clear()
       p.append(n[i])
